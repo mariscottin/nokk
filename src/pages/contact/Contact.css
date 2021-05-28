@@ -1,0 +1,150 @@
+.contact {
+  height: 100vh;
+}
+
+.contact__container {
+  width: 100%;
+  height: calc(100vh - 72px);
+  display: flex;
+  padding-top: 72px;
+}
+
+.contact__containerLeft {
+  min-height: 635px;
+  flex: 65%;
+  background-image: url("../../assets/contact-background.JPG");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contact__containerRight {
+  flex: 35%;
+  min-height: 635px;
+  height: 95%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact__title {
+  font-family: "Antonio", sans-serif;
+  text-align: center;
+}
+
+.contact__title h2 {
+  font-weight: lighter;
+  font-size: 28px;
+  margin-bottom: 18px;
+}
+
+.contact__title h4 {
+  color: rgb(143, 143, 143);
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 80%;
+  justify-content: space-between;
+}
+
+.contact__formTop {
+  height: 90%;
+}
+
+.contact__formGroup {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 18px;
+  margin-bottom: 18px;
+  min-height: 51px;
+  height: 12%;
+}
+
+.contact__textareaGroup {
+  min-height: 170px;
+  height: 40%;
+}
+
+.contact__form label {
+  font-size: 20px;
+  color: rgb(95, 95, 95);
+  font-family: "Antonio", sans-serif;
+  margin-left: 8px;
+  margin-bottom: 5px;
+}
+
+.contact__formInput {
+  font-family: "Roboto", sans-serif;
+  outline: none;
+  border-width: 0;
+  border-radius: 12px;
+  background: #ececec;
+  padding: 6px 12px;
+  font-size: 16px;
+  height: 100%;
+}
+
+.contact__formSmallInput {
+  /* height: 3vh; */
+}
+
+.contact__formGroup textarea {
+  /* height: 14vh; */
+  resize: none;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.contact__formSubmit {
+  width: 100% !important;
+}
+
+.contact__form p {
+  align-self: center;
+  margin-top: 22px;
+}
+
+@media (max-width: 991px) {
+  .contact__containerLeft {
+    flex: 55%;
+  }
+
+  .contact__containerRight {
+    flex: 45%;
+  }
+}
+
+@media (max-width: 767px) {
+  .contact {
+    height: auto;
+  }
+  .contact__container {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact__containerLeft {
+    min-height: 40vh;
+    background-position: bottom;
+  }
+
+  .contact__containerRight {
+    height: auto;
+    margin: 0;
+  }
+
+  .contact__form {
+    width: 80%;
+    padding: 22px 0;
+  }
+
+  .contact__title h2 {
+    margin-top: 22px;
+  }
+}
