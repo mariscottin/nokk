@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Eficiencia.css";
 
 function Eficiencia({ id }) {
@@ -22,9 +23,12 @@ function Eficiencia({ id }) {
           </div>
         </div>
         <div className="eficiencia__buttonContainer">
-          <button className="button__black eficiencia__button">
+          <Link
+            to="/contacto"
+            className="button button__black eficiencia__button"
+          >
             CONTACTANOS
-          </button>
+          </Link>
         </div>
       </div>
     </div>

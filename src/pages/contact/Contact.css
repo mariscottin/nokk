@@ -1,4 +1,5 @@
 .contact {
+  min-height: 576px;
   height: 100vh;
 }
 
@@ -10,7 +11,7 @@
 }
 
 .contact__containerLeft {
-  min-height: 635px;
+  min-height: 235px;
   flex: 65%;
   background-image: url("../../assets/contact-background.JPG");
   background-position: bottom;
@@ -27,6 +28,42 @@
   flex-direction: column;
   align-items: center;
 }
+
+/* WHEN MESSAGE WAS SENT */
+
+.contact__messageSent {
+  text-align: center;
+  height: 100%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact__messageSent h1 {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.contact__messageSent h3 {
+  font-family: "Antonio", sans-serif;
+  color: rgb(95, 95, 95);
+  margin-bottom: 30px;
+  letter-spacing: 0.75px;
+}
+
+.contact__messageSent img {
+  width: 70px;
+}
+
+.contact__messageSent p {
+  margin-top: 30px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* ----------------------- */
 
 .contact__title {
   font-family: "Antonio", sans-serif;
@@ -91,12 +128,18 @@
   height: 100%;
 }
 
-.contact__formSmallInput {
-  /* height: 3vh; */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
 }
 
 .contact__formGroup textarea {
-  /* height: 14vh; */
   resize: none;
   padding-top: 12px;
   padding-bottom: 12px;
@@ -108,7 +151,18 @@
 
 .contact__form p {
   align-self: center;
+  text-align: center;
   margin-top: 22px;
+}
+
+.contact__missingInput {
+  color: red;
+  margin-bottom: 6px;
+  margin-left: 6px;
+}
+
+.contact__redBorder {
+  border: 1px solid red;
 }
 
 @media (max-width: 991px) {
@@ -130,7 +184,6 @@
     flex-direction: column;
   }
   .contact__containerLeft {
-    min-height: 40vh;
     background-position: bottom;
   }
 

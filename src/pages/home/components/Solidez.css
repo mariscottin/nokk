@@ -1,4 +1,5 @@
 .solidez {
+  min-height: 576px;
   height: 100vh;
   width: 100%;
 }
@@ -12,6 +13,7 @@
 
 .solidez__left {
   flex: 40%;
+  min-height: 345px;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -20,6 +22,7 @@
 
 .solidez__right {
   flex: 60%;
+  min-height: 230px;
   height: 100%;
   background-image: url("../../../assets/solidez.jpg");
   background-position: center;
@@ -78,19 +81,25 @@
 
   .solidez__leftContainer {
     width: 95%;
+    height: 90%;
+  }
+
+  .solidez__leftTop {
+    margin-top: 12px;
   }
 
   .solidez__left {
-    flex: 40%;
+    flex: 60%;
   }
 
   .solidez__right {
-    flex: 60%;
+    flex: 40%;
   }
 }
 
 @media (max-width: 448px) {
   .solidez__button {
-    width: 99% !important;
+    width: auto !important;
+    margin: auto;
   }
 }

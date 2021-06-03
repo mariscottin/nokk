@@ -7,8 +7,16 @@ const Sidebar = (props) => {
   return (
     <div className="sidebar">
       <ul className="sidebar__container">
-        <li>Nosotros</li>
-        <li>Especificaciones</li>
+        <li>
+          <Link to="/nosotros" onClick={() => props.toggleSidebar()}>
+            Nosotros
+          </Link>
+        </li>
+        <li>
+          <Link to="/especificaciones" onClick={() => props.toggleSidebar()}>
+            Especificaciones
+          </Link>
+        </li>
         <li>
           <Link to="/contacto" onClick={() => props.toggleSidebar()}>
             Contacto

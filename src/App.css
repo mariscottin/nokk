@@ -2,19 +2,25 @@ body.sidebar__open {
   overflow: hidden;
 }
 
-.button__black {
+.button {
   font-family: "Antonio", sans-serif;
+  display: block;
   text-transform: uppercase;
   background: transparent;
-  border: 3px solid black;
   border-radius: 18px;
   width: 220px;
   padding: 12px 16px;
-  color: black;
   font-size: 18px;
   letter-spacing: 1.25px;
-  transition: all 0.2s ease;
   cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  text-align: center;
+}
+
+.button__black {
+  border: 3px solid #000000;
+  color: black;
 }
 
 .button__black:hover {
@@ -25,20 +31,15 @@ body.sidebar__open {
 
 .button__white {
   font-family: "Antonio", sans-serif;
-  background: transparent;
-  width: 220px;
-  padding: 12px 16px;
   border: 3px solid white;
-  text-transform: uppercase;
   color: white;
-  border-radius: 40px;
-  font-size: 18px;
-  letter-spacing: 1.5px;
-  transition: all 0.3s ease;
 }
 
 .button__white:hover {
-  cursor: pointer;
   background: white;
   color: #333;
+}
+
+.loading-spinner {
+  margin: auto;
 }

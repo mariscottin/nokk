@@ -44,8 +44,12 @@ function Navigation() {
           </div>
           <div className="navigation__nav">
             <ul>
-              <li>Nosotros</li>
-              <li>Especificaciones</li>
+              <li>
+                <Link to="/nosotros">Nosotros</Link>
+              </li>
+              <li>
+                <Link to="/especificaciones">Especificaciones</Link>
+              </li>
               <li>
                 <Link to="/contacto">Contacto</Link>
               </li>

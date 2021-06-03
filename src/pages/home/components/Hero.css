@@ -1,5 +1,6 @@
 .hero {
   padding-top: 130px;
+  min-height: 460px;
   height: 100vh;
   background-image: url("../../../assets/hero-background-2.jpg");
   background-size: cover;
@@ -46,7 +47,6 @@
 
 .hero__container-bottom-row1 {
   width: 685px;
-  max-width: 1600px;
   margin: 10px auto;
   display: flex;
   justify-content: space-between;
@@ -84,7 +84,8 @@
   align-self: center;
 }
 
-.hero__container-bottom-button button {
+.hero__container-bottom-button .button {
+  margin: auto;
   margin-top: -8px;
 }
 
@@ -164,7 +165,7 @@
     text-align: center;
   }
 
-  .hero__container-bottom-button button {
+  .hero__container-bottom-button .button {
     width: 230px;
     padding: 12px 20px;
     border: 2px solid white;
@@ -213,5 +214,9 @@
   .hero__container-bottom-icon p {
     font-size: 3vw;
     line-height: 16px;
+  }
+
+  .hero__container-bottom-button .button {
+    width: auto;
   }
 }

@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 import "./Solidez.css";
 
 function Solidez({ id }) {
@@ -17,9 +17,12 @@ function Solidez({ id }) {
               </p>
             </div>
             <div className="solidez__leftBottom">
-              <button className="button__black solidez__button">
+              <Link
+                to="/contacto"
+                className="button button__black solidez__button"
+              >
                 Contactanos
-              </button>
+              </Link>
             </div>
           </div>
         </div>

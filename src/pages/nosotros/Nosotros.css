@@ -1,0 +1,195 @@
+.nosotros {
+  min-height: 100vh;
+}
+
+.nosotros__nav {
+  height: 90px;
+  width: 100%;
+}
+
+.nosotros__navContainer {
+  width: 100%;
+  height: 100%;
+  max-width: 1600px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+.nosotros__nav img {
+  width: 52px;
+  margin-left: 20px;
+}
+
+.nosotros__title {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.nosotros__title h1 {
+  margin-bottom: 18px;
+  font-size: 46px;
+  font-weight: 500;
+}
+
+.nosotros__title h3 {
+  font-family: "Antonio", sans-serif;
+  font-size: 24px;
+  letter-spacing: 1.25px;
+  color: rgb(95, 95, 95);
+}
+
+/* -----------BODY------------- */
+
+.nosotros__body {
+  width: 80%;
+  max-width: 1600px;
+  margin: auto;
+  margin-top: 50px;
+  display: flex;
+}
+
+.nosotros__bodyContent {
+  width: 65%;
+}
+
+.nosotros__bodyContent1 {
+  /* float: left; */
+}
+
+.nosotros__bodyContent2 {
+  /* float: right; */
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 40px;
+}
+
+.nosotros__bodyContentTitle {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.nosotros__bodyContentTitle h5 {
+  font-size: 22px;
+  font-weight: 500;
+  padding: 0 12px;
+}
+
+.nosotros__bodyTitleRight {
+  justify-content: flex-end;
+}
+
+.nosotros__bodyLine {
+  height: 2px;
+  width: 100%;
+  background: black;
+}
+
+.nosotros__bodyContentDetail {
+  width: 80%;
+  margin-left: 20px;
+  font-size: 18px;
+  margin-bottom: 12px;
+  line-height: 28px;
+}
+
+.nosotros__bodyContentDetail a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+
+.nosotros__bodyContentLogo,
+.nosotros__reverseContent {
+  width: 100%;
+}
+
+.nosotros__bodyContentLogo img {
+  width: 180px;
+  margin-left: 20px;
+}
+
+.nosotros__bodyLogoRight {
+  text-align: right;
+}
+
+.nosotros__bottom {
+  width: 95%;
+  margin: auto;
+  padding: 50px 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.nosotros__bottom p {
+  font-family: "Antonio", sans-serif;
+  letter-spacing: 0.25px;
+  color: rgb(95, 95, 95);
+  margin-bottom: 18px;
+}
+
+@media (max-width: 1043px) {
+  .nosotros__body {
+    width: 95%;
+  }
+}
+
+@media (max-width: 921px) {
+  .nosotros__body {
+    /* width: 80%;
+        max-width: 1600px;
+        margin: auto;
+        margin-top: 50px; */
+    /* display: flex; */
+    flex-direction: column;
+  }
+
+  .nosotros__bodyContent {
+    width: 100%;
+  }
+
+  .nosotros__reverseContent {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .nosotros__bodyContentDetail {
+    width: 90%;
+    margin: auto;
+    font-size: 16px;
+    margin-bottom: 12px;
+    line-height: 24px;
+  }
+
+  .nosotros__bodyContentLogo img {
+    width: 130px;
+    margin: 0;
+  }
+
+  .nosotros__bodyContentLogo,
+  .nosotros__reverseContent {
+    text-align: center;
+  }
+
+  .nosotros__bodyContent2 {
+    /* float: right; */
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+  }
+
+  .nosotros__bodyContent2 p {
+    margin-top: 20px;
+  }
+}

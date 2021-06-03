@@ -7,6 +7,7 @@ import {
   faTachometerAlt,
   faChevronDown,
 } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 import { Link as Scroll } from "react-scroll";
 
 import "./Hero.css";
@@ -32,31 +33,49 @@ function Hero({ id }) {
                 <p>Eficiente</p>
               </div>
             </Scroll>
-            <div className="hero__container-bottom-icon">
-              <Scroll
-                activeClass="active"
-                to="solidezSection"
-                spy={true}
-                smooth={true}
-                offset={0}
-                duration={800}
-              >
-                <div className="hero__container-bottom-icon">
-                  <FontAwesomeIcon icon={faWeightHanging} />
-                  <p>Sólido</p>
-                </div>
-              </Scroll>
-            </div>
-            <div className="hero__container-bottom-icon">
-              <FontAwesomeIcon icon={faTachometerAlt} />
-              <p>Rápido</p>
-            </div>
-            <div className="hero__container-bottom-icon">
-              <FontAwesomeIcon icon={faSeedling} />
-              <p>Sustentable</p>
-            </div>
+            <Scroll
+              activeClass="active"
+              to="solidezSection"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={800}
+            >
+              <div className="hero__container-bottom-icon">
+                <FontAwesomeIcon icon={faWeightHanging} />
+                <p>Sólido</p>
+              </div>
+            </Scroll>
+            <Scroll
+              activeClass="active"
+              to="rapidoSection"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={800}
+            >
+              <div className="hero__container-bottom-icon">
+                <FontAwesomeIcon icon={faTachometerAlt} />
+                <p>Rápido</p>
+              </div>
+            </Scroll>
+            <Scroll
+              activeClass="active"
+              to="sustentableSection"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={800}
+            >
+              <div className="hero__container-bottom-icon">
+                <FontAwesomeIcon icon={faSeedling} />
+                <p>Sustentable</p>
+              </div>
+            </Scroll>
             <div className="hero__container-bottom-button">
-              <button className="button__white">Contactanos</button>
+              <Link to="/contacto" className="button button__white">
+                Contactanos
+              </Link>
             </div>
           </div>
           <div className="hero__container-bottom-row2">
