@@ -11,10 +11,10 @@ function Sustentable(props) {
               <h4 className="sustentable__category">Ventajas</h4>
               <h1 className="sustentable__title">Sustentabilidad</h1>
               <ul className="sustentable__body">
-                <li>0 consumo de agua durante la obra gris</li>
-                <li>Madera OSB de bosques reforestados</li>
-                <li>Ahorro energético por la eficiencia de los paneles</li>
-                <li>Reciclaje de sobrantes de obra</li>
+                <li>0 consumo de agua durante la obra gris.</li>
+                <li>Madera OSB de bosques reforestados.</li>
+                <li>Ahorro energético por la eficiencia de los paneles.</li>
+                <li>Reciclaje de sobrantes de obra.</li>
               </ul>
             </div>
             <div className="sustentable__leftBottom">

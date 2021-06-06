@@ -1,19 +1,18 @@
 .contact {
-  min-height: 576px;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .contact__container {
   width: 100%;
-  height: calc(100vh - 72px);
+  height: calc(100vh - 106px);
   display: flex;
-  padding-top: 72px;
+  padding-top: 106px;
 }
 
 .contact__containerLeft {
   min-height: 235px;
   flex: 65%;
-  background-image: url("../../assets/contact-background.JPG");
+  background-image: url("../../assets/Contacto.jpg");
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;

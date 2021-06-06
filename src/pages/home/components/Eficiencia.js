@@ -16,9 +16,12 @@ function Eficiencia({ id }) {
           </div>
           <div className="eficiencia__bottomColumn eficiencia__bottomCol2">
             <h3 className="eficiencia__body">
-              Los paneles de construcción SIP que utilizamos en Nokk preservan
-              la energía, ahorrando más del 60%, solo por la conservación del
-              calor.
+              Gracias a la conservación del calor de los paneles SIP, se genera
+              un ahorro energético superior al 60%.
+            </h3>
+            <h3 className="eficiencia__body">
+              Imagen ilustrativa del espesor que necesita cada material para
+              igualar la eficiencia de un panel SIP.
             </h3>
           </div>
         </div>

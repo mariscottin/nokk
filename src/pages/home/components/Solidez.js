@@ -12,8 +12,8 @@ function Solidez({ id }) {
               <h4 className="solidez__category">Ventajas</h4>
               <h1 className="solidez__title">Solidez</h1>
               <p className="solidez__body">
-                La estructura de los paneles permite que sean macizos y resistan
-                fuerzas de hasta 18 toneladas.
+                La estructura maciza de los paneles SIP logra sus propiedades
+                anti sísmicas y resistencia a fuerzas de hasta 18 toneladas.
               </p>
             </div>
             <div className="solidez__leftBottom">

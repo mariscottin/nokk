@@ -16,7 +16,7 @@ function Hero({ id }) {
     <div className="hero" id={id}>
       <div className="hero__container">
         <div className="hero__container-heroText">
-          <h1>Construccion Eficiente con Paneles SIP</h1>
+          <h1>Construcción Eficiente con Paneles SIP</h1>
         </div>
         <div className="hero__container-bottom">
           <div className="hero__container-bottom-row1">

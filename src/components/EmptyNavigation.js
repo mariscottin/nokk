@@ -5,9 +5,11 @@ import "./EmptyNavigation.css";
 function EmptyNavigation() {
   return (
     <div className="emptyNavigation">
-      <Link to="/">
-        <img src={Logo} alt="Nokk Logo" />
-      </Link>
+      <div className="emptyNavigation__coontainer">
+        <Link to="/">
+          <img src={Logo} alt="Nokk Logo" />
+        </Link>
+      </div>
     </div>
   );
 }

@@ -1,12 +1,19 @@
 .navigation {
   width: 100%;
   height: auto;
-  background: rgba(0, 0, 0, 0.4);
   position: fixed;
   top: 0;
   left: 0;
   z-index: 1000;
-  transition: all 1s ease;
+  transition: all 0.3s ease;
+}
+
+.navigation__transparent {
+  background: transparent;
+}
+
+.navigation__black {
+  background: rgba(0, 0, 0, 0.4);
 }
 
 .navigation__container {

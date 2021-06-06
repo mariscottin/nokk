@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useScrollPosition } from "@n8tb1t/use-scroll-position";
 import Logo from "../assets/logo-white.png";
 import BackDrop from "./Backdrop";
 import Sidebar from "./Sidebar";
@@ -10,6 +11,16 @@ import "./Navigation.css";
 function Navigation() {
   const [sidebarWidth, setSideBarWidth] = useState(0);
   const [hamburgerMenuX, setHamburgerMenuX] = useState(false);
+  const [blackNav, setBlackNav] = useState(false);
+  useScrollPosition(({ prevPos, currPos }) => {
+    console.log(currPos.y);
+    if (currPos.y <= -300) {
+      setBlackNav(true);
+    }
+    if (currPos.y > -300) {
+      setBlackNav(false);
+    }
+  });
 
   const toggleSidebar = () => {
     if (sidebarWidth === 0) {
@@ -26,7 +37,11 @@ function Navigation() {
   return (
     <>
       {sidebarWidth > 0 && <BackDrop onClick={toggleSidebar} />}
-      <div className="navigation">
+      <div
+        className={`navigation ${
+          blackNav ? "navigation__black" : "navigation__transparent"
+        }`}
+      >
         <div className="navigation__container">
           <div className="navigation__logo-container">
             <Scroll

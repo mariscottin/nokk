@@ -51,7 +51,7 @@ function Especificaciones() {
             <div className="especificaciones__item">
               <div className="especificaciones__line"></div>
               <h3>Revestimientos</h3>
-              <p>Revestimiento plástico, pintura, madera, chapa</p>
+              <p>Revestimiento plástico, pintura, madera, chapa.</p>
             </div>
           </div>
         </div>

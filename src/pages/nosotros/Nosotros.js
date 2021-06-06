@@ -2,17 +2,20 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Logo from "../../assets/logo-simple.JPG";
 import DeRosaLogo from "../../assets/logo-estudio-de-rosa.JPG";
+import EmptyNavigation from "../../components/EmptyNavigation";
+
 import "./Nosotros.css";
 function Nosotros() {
   return (
     <div className="nosotros">
-      <nav className="nosotros__nav">
+      <EmptyNavigation />
+      {/* <nav className="nosotros__nav">
         <div className="nosotros__navContainer">
           <Link to="/">
             <img src={Logo} alt="Nokk Logo" />
           </Link>
         </div>
-      </nav>
+      </nav> */}
       <div className="nosotros__container">
         <div className="nosotros__title">
           <h1>Conocenos</h1>
