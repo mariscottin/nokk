@@ -12,7 +12,7 @@
 .contact__containerLeft {
   min-height: 235px;
   flex: 65%;
-  background-image: url("../../assets/Contacto.jpg");
+  background-image: url("../../assets/contacto.jpg");
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -162,6 +162,17 @@ input[type="number"] {
 
 .contact__redBorder {
   border: 1px solid red;
+}
+
+.PhoneInputInput {
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+}
+
+.PhoneInputInput:focus {
+  outline: none;
 }
 
 @media (max-width: 991px) {

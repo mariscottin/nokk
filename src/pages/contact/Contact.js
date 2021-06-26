@@ -3,11 +3,14 @@ import emailjs from "emailjs-com";
 import ReactLoading from "react-loading";
 import EmptyNavigation from "../../components/EmptyNavigation";
 import Success from "../../assets/success-logo.png";
+import PhoneInput from "react-phone-number-input";
+import "react-phone-number-input/style.css";
 import "./Contact.css";
 
 function Contact() {
   const [name, setName] = useState(null);
   const [email, setEmail] = useState(null);
+  const [phone, setPhone] = useState();
   const [message, setMessage] = useState(null);
   const [isLoading, setLoading] = useState(false);
   const [messageSent, setMessageSent] = useState(false);
@@ -34,6 +37,7 @@ function Contact() {
             setName();
             setEmail();
             setMessage();
+            setPhone();
             console.log(result.text);
           },
           (error) => {
@@ -122,12 +126,20 @@ function Contact() {
                   </div>
                   <div className="contact__formGroup">
                     <label htmlFor="formPhone">Teléfono</label>
-                    <input
-                      type="number"
+                    <PhoneInput
+                      value={phone}
+                      onChange={setPhone}
+                      defaultCountry="AR"
                       className="contact__formInput contact__formSmallInput"
                       id="formPhone"
                       name="from_phone"
                     />
+                    {/* <input
+                      type="number"
+                      className="contact__formInput contact__formSmallInput"
+                      id="formPhone"
+                      name="from_phone"
+                    /> */}
                   </div>
                   <div className="contact__formGroup contact__textareaGroup">
                     <label htmlFor="formBody">Tu Consulta*</label>
